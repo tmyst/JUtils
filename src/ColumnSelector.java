@@ -366,10 +366,8 @@ public class ColumnSelector extends Application {
             headers.addAll(strs);
             newHeaders.addAll(strs);
         }catch (FileNotFoundException e){
-            System.out.println("File Not Found: " + e.getMessage());
             txtMessage.setText("File Not Found: " + e.getMessage());
         }catch (IOException e){
-            System.out.println("IO Exception: " + e.getMessage());
             txtMessage.setText("IO Exception: " + e.getMessage());
         }
         listViewSrcFileColumns.setItems(headers);
